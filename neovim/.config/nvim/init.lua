@@ -7,3 +7,7 @@ require('config.lazy')
 vim.cmd[[colorscheme tokyonight-night]]
 
 require('config.open_nvim_tree')
+
+if vim.g.neovide then
+	require('config.neovide')
+end
