@@ -5,3 +5,5 @@ vim.g.loaded_netrwPlugin = 1
 require('config.lazy')
 
 vim.cmd[[colorscheme tokyonight-night]]
+
+require('config.open_nvim_tree')
