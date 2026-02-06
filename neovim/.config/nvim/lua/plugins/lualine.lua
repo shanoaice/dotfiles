@@ -3,5 +3,9 @@ return {
     dependencies = { 'nvim-tree/nvim-web-devicons' },
     opts = {
         theme = 'tokyonight-night',
+	extensions = {
+		'nvim-tree',
+		'aerial',
+	},
     },
 }
