@@ -22,12 +22,16 @@ set --erase _asdf_shims
 #export RUSTUP_DIST_SERVER=https://mirrors.ustc.edu.cn/rust-static
 #export RUSTUP_UPDATE_ROOT=https://mirrors.ustc.edu.cn/rust-static/rustup
 
+source "$__fish_config_dir/config.fish.local"
+
 export EDITOR=nano
 export SUDO_EDITOR=rnano
 
 alias ls exa
 alias ll "ls -l"
 alias la "ll -a"
+
+alias qwen-openrouter 'OPENROUTER_API_KEY=(keepassxc-cli show "$KP_DB_PATH" "$KP_OPENROUTER_ATTRIBUTE_NAME" -a "Password" -s) qwen'
 
 #set -ax PATH $HOME/.local/texlive/2025/bin/x86_64-linux
 #set -ax MANPATH $HOME/.local/texlive/2025/texmf-dist/doc/man
