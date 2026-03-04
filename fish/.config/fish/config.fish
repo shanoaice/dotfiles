@@ -37,6 +37,10 @@ alias qwen-openrouter 'OPENROUTER_API_KEY=(keepassxc-cli show "$KP_DB_PATH" "$KP
 #set -ax MANPATH $HOME/.local/texlive/2025/texmf-dist/doc/man
 #set -ax INFOPATH $HOME/.local/texlive/2025/texmf-dist/doc/info
 
+# Added by LM Studio CLI (lms)
+set -gx PATH $PATH /home/shanoaice/.lmstudio/bin
+# End of LM Studio CLI section
+
 starship init fish | source
 
 set -g fish_greeting
