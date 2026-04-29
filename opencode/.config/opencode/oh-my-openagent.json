@@ -1,0 +1,119 @@
+{
+  "$schema": "https://raw.githubusercontent.com/code-yeongyu/oh-my-openagent/dev/assets/oh-my-opencode.schema.json",
+  "agents": {
+    "sisyphus": {
+      "model": "deepseek/deepseek-v4-pro",
+      "variant": "max",
+      "fallback_models": [
+        {
+          "model": "github-copilot/claude-opus-4.5",
+          "variant": "max"
+        }
+      ]
+    },
+    "hephaestus": {
+      "model": "github-copilot/gemini-3.1-pro-preview",
+      "variant": "high"
+    },
+    "oracle": {
+      "model": "github-copilot/gemini-3.1-pro-preview",
+      "variant": "high",
+      "fallback_models": [
+        {
+          "model": "github-copilot/claude-opus-4.5",
+          "variant": "max"
+        }
+      ]
+    },
+    "explore": {
+      "model": "deepseek/deepseek-v4-flash"
+    },
+    "multimodal-looker": {
+      "model": "openrouter/google/gemma-4-31b-it:free"
+    },
+    "metis": {
+      "model": "deepseek/deepseek-v4-pro",
+      "variant": "max",
+      "fallback_models": [
+        {
+          "model": "github-copilot/claude-opus-4.5",
+          "variant": "max"
+        }
+      ]
+    },
+    "momus": {
+      "model": "github-copilot/gemini-3.1-pro-preview",
+      "variant": "high",
+      "fallback_models": []
+    },
+    "atlas": {
+      "model": "deepseek/deepseek-v4-pro",
+      "variant": "max",
+      "fallback_models": [
+        {
+          "model": "github-copilot/gpt-5.2",
+          "variant": "medium"
+        }
+      ]
+    }
+  },
+  "categories": {
+    "visual-engineering": {
+      "model": "github-copilot/gemini-3.1-pro-preview",
+      "variant": "high",
+      "fallback_models": []
+    },
+    "ultrabrain": {
+      "model": "github-copilot/gemini-3.1-pro-preview",
+      "variant": "high",
+      "fallback_models": []
+    },
+    "deep": {
+      "model": "deepseek/deepseek-v4-pro",
+      "variant": "max",
+      "fallback_models": []
+    },
+    "artistry": {
+      "model": "github-copilot/gemini-3.1-pro-preview",
+      "variant": "high",
+      "fallback_models": [
+        {
+          "model": "github-copilot/claude-opus-4.7",
+          "variant": "max"
+        },
+        {
+          "model": "github-copilot/gpt-5.5"
+        }
+      ]
+    },
+    "quick": {
+      "model": "deepseek/deepseek-v4-flash",
+      "fallback_models": [
+        {
+          "model": "github-copilot/claude-haiku-4.5"
+        },
+        {
+          "model": "github-copilot/gemini-3-flash-preview"
+        }
+      ]
+    },
+    "unspecified-low": {
+      "model": "deepseek/deepseek-v4-flash",
+      "fallback_models": [
+        {
+          "model": "github-copilot/gemini-3-flash-preview"
+        }
+      ]
+    },
+    "unspecified-high": {
+      "model": "deepseek/deepseek-v4-flash",
+      "variant": "max",
+      "fallback_models": []
+    },
+    "writing": {
+      "model": "deepseek/deepseek-v4-flash",
+      "variant": "max",
+      "fallback_models": []
+    }
+  }
+}
