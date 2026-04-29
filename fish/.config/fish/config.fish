@@ -41,6 +41,9 @@ alias qwen-openrouter 'OPENROUTER_API_KEY=(keepassxc-cli show "$KP_DB_PATH" "$KP
 set -gx PATH $PATH /home/shanoaice/.lmstudio/bin
 # End of LM Studio CLI section
 
+set -gx PATH $PATH $HOME/.local/bin
+set -gx PATH $PATH $HOME/.cargo/bin
+
 starship init fish | source
 
 set -g fish_greeting
