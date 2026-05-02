@@ -1,4 +1,4 @@
-vim.o.guifont = "Monaspace Neon, Symbols Nerd Font:h12"
+vim.o.guifont = "Cascadia Code, Symbols Nerd Font:h12"
 
 vim.g.neovide_floating_shadow = true
 vim.g.neovide_floating_z_height = 10
