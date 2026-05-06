@@ -22,7 +22,7 @@ set --erase _asdf_shims
 #export RUSTUP_DIST_SERVER=https://mirrors.ustc.edu.cn/rust-static
 #export RUSTUP_UPDATE_ROOT=https://mirrors.ustc.edu.cn/rust-static/rustup
 
-source "$__fish_config_dir/config.fish.local"
+source "$__fish_config_dir/config.local.fish"
 
 export EDITOR=nano
 export SUDO_EDITOR=rnano
